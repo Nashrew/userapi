@@ -13,7 +13,8 @@ Optional
             'Enable annotation processors' is turned on (IntelliJ, not sure if an option is required for eclipse). 
         - If you don't want to install plugins or change settings there are two options:
             - There are commented out getters in the User class that you can use which should make your IDE happy
-            - You could ignore the IDE errors, I beleive the application will still run since Lombok is in the classpath
+            - You could ignore the IDE errors, I beleive the application will still run since Lombok is in the 
+                classpath
         
 Command line:
 
@@ -36,11 +37,11 @@ Eclipse / IntelliJ:
 Authorization:
 
     Basic authentication is provided with spring security and a simple implementation of JWT. 
-        The only username/password which can be authenticated is 'developer'/'dev'. This was done in the interest 
-        of time, and because of a lack of 'real' users in the database.
+        The only username/password which can be authenticated is 'developer'/'dev'. This was done in the
+        interest of time, and because of a lack of 'real' users in the database.
     
-    To obtain a token, POST { "username":"developer", "password":"dev" } to /auth/login. That token can be used for access 
-        to the user entity endpoints.
+    To obtain a token, POST { "username":"developer", "password":"dev" } to /auth/login. That token can 
+    be used for access to the user entity endpoints.
 
 Usage:
 
@@ -49,9 +50,11 @@ Usage:
     
 Additional notes:
 
-    This was a fun project. It was built largely upon the invoiceapi project (also on my github), with several additions 
-        and enhancements along the way. Namely: spring security / jwt, database constraints, and much more robust test coverage
+    This was a fun project. It was built largely upon the invoiceapi project (also on my github), with 
+        several additions and enhancements along the way. Namely: spring security / jwt, database 
+        constraints, and much more robust test coverage
         
-    Although this project may not need them, some things like paging and put/patch are a result of being very low effort to convert
+    Although this project may not need them, some things like paging and put/patch are a result of 
+        being very low effort to convert
     
     
