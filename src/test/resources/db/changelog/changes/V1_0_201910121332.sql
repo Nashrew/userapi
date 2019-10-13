@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS users (
+    id IDENTITY,
+    first_name VARCHAR(64) NOT NULL,
+    last_name VARCHAR(64) NOT NULL,
+);
+
+ALTER TABLE users
+ADD CONSTRAINT UNIQUE_FIRST_AND_LAST_NAME
+UNIQUE ( first_name, last_name )
